@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGN-4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .parent{
+            margin-top: 150px;
+            height: 60vh;
+            width: 40vw;
+            background-color: rgba(185, 163, 135,0.34);
+            display: flex;
+            justify-content: space-around;
+            border-radius: 15px;
+        }
+        .result{
+            height: 20vh;
+            width: 10vw;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            text-align: center;
+            background: linear-gradient(to bottom, hsla(229, 75%, 43%, 0.504) 44%, rgba(12,136,242,1) 84%);
+            justify-content: space-evenly;
+            border-radius: 50%;
+            color: white;
+        }
+        .child1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, rgba(29,97,204,1) 34%, rgba(12,136,242,1) 64%);
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 2px;
+            border-radius: 15px;
+            color: white;
+        }
+        .child2{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 2px;
+            border-radius: 10px;
+        }
+        .summary{
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            font-weight: bolder; 
+            margin-left: -100px; 
+            margin-top: 10px;
+        }
+        .scored{
+            font-weight: bold;
+            font-size:1rem;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            height: 3.5rem;
+            width: 100%;
+            height: 10%;
+            margin: 15px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        i{
+            font-size: 18px;
+            padding: 3px;
+        }
+        .row1{
+            background-color: hsla(350, 67%, 88%, 0.68);
+            box-shadow: 1px 1px 20px -10px;
+        }
+        .row2{
+            background-color: hsla(68, 72%, 85%, 0.68);
+            box-shadow: 1px 1px 20px -10px;
+        }
+        .row3{
+            background-color: hsla(173, 67%, 88%, 0.68);
+            box-shadow: 1px 1px 20px -10px;
+        }
+        .row4{
+            background-color: hsla(200, 72%, 83%, 0.571);
+            box-shadow: 1px 1px 20px -10px;
+        }
+        .row5{
+            display: flex;
+            align-items: center;
+            padding: 13px;
+            width: 13vw;
+            font-size: larger;
+            font-weight: bold;
+            background-color: rgb(21, 25, 71);
+            color: white;
+            letter-spacing: 0.5px;
+            border-style: none;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .bi-lightning{
+            color: red;
+            font-size: 20px;
+        }
+        .verbal, .comment, .brain, .lightning{
+            font-size: 16px;
+            margin-top: 2px;
+        }
+        .fa-brain, .brain{
+            color: rgb(225, 225, 33);
+        }
+        .fa-comment, .comment{
+            color: rgb(10, 136, 16);
+        }
+        .bi-eye, .verbal{
+            color: hsla(229, 75%, 43%);
+        }
+        .rating{
+            font-size: 18px;
+            margin-top: 2px;
+        }
+        @media screen and (min-width:300px) and (max-width:1080px) {
+            h2{
+                font-size: 16px;
+            }
+            .result{
+                height: 20vh;
+                width: 14vw;
+            }
+            .summary{
+                margin-left: 0px;
+            }
+            i{
+                font-size: 16px;
+                padding: 3px;
+            }
+            .rating{
+                font-size: 10px;
+                margin-top: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">
+            <div>
+                <h2>Your Result</h2>
+            </div>
+            <div class="result">
+                <h1>76 </h1><span> of 100</span>
+            </div>
+            <div><h1>Great</h1></div>
+            <div class="scored">You scored higher than 65% of the other people who have taken these tests</div>
+        </div>
+        <div class="child child2">
+            <div class="summary">
+                <h2>Summary</h2>
+            </div>
+            <div class="row row1">
+                <i class="bi bi-lightning"></i>
+                <h2 class="lightning">Reaction</h2>
+                <h2 class="rating">80 /100</h2>
+            </div>
+            <div class="row row2">
+                <i class="fa-solid fa-brain"></i>
+                <h2 class="brain">Memory</h2>
+                <h2 class="rating">90 /100</h2>
+            </div>
+            <div class="row row3">
+                <i class="fa-regular fa-comment"></i>
+                <h2 class="comment">Verbal</h2>
+                <h2 class="rating">61 /100</h2>
+            </div>
+            <div class="row row4">
+                <i class="bi bi-eye"></i>
+                <h2 class="verbal">Visual</h2>
+                <h2 class="rating">72 /100</h2>
+            </div>
+            <button class="row row5">Continue</button>
+        </div>
+    </div>
+</body>
+</html>
